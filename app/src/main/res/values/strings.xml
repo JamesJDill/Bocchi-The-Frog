@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BocchiFrog</string>
+    <string name="welcome_press_hint_text">Press Anywhere To Begin!</string>
+    <string name="name_input_description">name input</string>
+    <string name="name_validation_initial_text">Enter a name</string>
+    <string name="character_select_text">Select a Character!</string>
+    <string name="difficulty_select_text">Select a Difficulty!</string>
+    <string name="start_button_text">Start Game!</string>
+</resources>

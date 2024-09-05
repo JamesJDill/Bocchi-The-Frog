@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="354dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="128dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/name_input_description"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/name_validation_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_validation_initial_text"
+            android:textColor="@color/design_default_color_error" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="323dp"
+        android:layout_height="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/bocchiButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="selectBocchi"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/bocchi_upscale_up" />
+
+        <ImageButton
+            android:id="@+id/kitaButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="selectKita"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/kita_upscale_up" />
+
+        <ImageButton
+            android:id="@+id/nijikaButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="selectNijika"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/nijika_upscale_up" />
+
+        <ImageButton
+            android:id="@+id/ryoButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="selectRyo"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ryo_upscale_up" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/character_select_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout02" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="323dp"
+        android:layout_height="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/character_name">
+
+        <ImageButton
+            android:id="@+id/easyButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="selectEasy"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/heart_green" />
+
+        <ImageButton
+            android:id="@+id/normalButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="selectNormal"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/heart_yellow" />
+
+        <ImageButton
+            android:id="@+id/hardButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="selectHard"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/heart_red" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/difficulty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/difficulty_select_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout03" />
+
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:onClick="startGame"
+        android:text="@string/start_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/selection_validation_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/design_default_color_error"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
